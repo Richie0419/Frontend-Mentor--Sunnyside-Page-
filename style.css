@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+/********* Header **********/
+
+header{
+    background-color: hsl(200, 100%, 62%);
+    padding: 2.5rem;
+    background-image:url(images/desktop/image-header.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center bottom ;
+    background-size: cover;
+    height: 650px;
+}
+
+.logo{
+    margin-left: 2rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items{
+    display: flex;
+    list-style: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.nav-items li a{
+    margin-left: 2rem;
+}
+
+.nav-items .contact-btn{
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    font-weight: 700;
+    font-family: 'Fraunces',sans-serif;
+    margin-right: 2rem;
+}
+
+.hamburger-btn{
+    display: none;
+}
+
+.contact-btn:hover{
+    color: hsl(0, 0%, 100%);
+    background-color: #6eceff;
+}
+
+.hero-details{
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    padding-top: 4.5rem;
+    font-family: 'Fraunces',sans-serif;
+    letter-spacing: 10px;
+}
+
+.hero-details h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-bottom: 2.8rem;
+}
+
+.hero-details img{
+    height: 6rem;
+}
+
+/********Pictures-Gallery********/
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box{
+    padding: 7rem;
+}
+
+.box h2{
+   font-family:'Fraunces', sans-serif;
+   font-size: 3rem;
+   color: hsl(212, 27%, 19%);
+   margin-bottom: 2rem;
+}
+
+.box p{
+    color: hsl(213, 9%, 39%);
+    font-size: 1.13rem;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+}
+
+.box a{
+    font-family: 'Fraunces', sans-serif;
+    color: #23303B;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+.btn-underline{
+    border-bottom: 8px solid hsl(51, 100%, 49%);
+}
+
+.btn-underline-1{
+    border-bottom: 8px solid hsl(7, 99%, 70%);;
+}
+
+.box-content,
+.box-content-1{
+    text-align: center;
+    margin-top: -13rem;
+}
+
+.box-content h3{
+    font-size: 2rem;
+    font-family:'Fraunces',sans-serif;
+    margin-bottom: 1rem;
+    color:hsl(167, 40%, 24%) ;
+}
+
+.box-content-1 h3{
+    font-size: 2rem;
+    font-family:'Fraunces', sans-serif;
+    margin-bottom: 1rem;
+    color:hsl(198, 62%, 26%);
+}
+
+.box-content p{
+    font-size: 1.2rem;
+    width: 60%;
+    margin: auto;
+    line-height: 1.5;
+    color: hsl(167, 40%, 24%);
+}
+
+.box-content-1 p{
+    font-size: 1.2rem;
+    width: 60%;
+    margin: auto;
+    line-height: 1.5;
+    color: hsl(198, 62%, 26%);
+}
+
+.col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/******** Testimonies *********/
+
+.Testimoinals{
+    padding: 7rem 10rem;
+}
+
+.testimonies-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-testimonies h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: hsl(210, 4%, 67%);
+    font-family: 'Fraunces',sans-serif;
+}
+
+.testimony{
+    text-align: center;
+}
+
+.testimony p{
+    font-family:'Barlow', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: hsl(213, 9%, 39%);
+    font-weight: 900;
+}
+
+.testimony img{
+    width: 28%;
+    border-radius: 50px;
+    margin-bottom: 3rem;
+}
+
+.profile-details{
+    margin-top: 3rem;
+}
+
+.profile-details h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Fraunces',sans-serif;
+    margin-bottom: 0.5rem;
+    color: hsl(212, 27%, 19%);
+}
+
+.profile-details p{
+    font-size: 0.9rem;
+    color: hsl(210, 4%, 67%);
+}
+
+/******** Picture Showcase ********/
+
+.pictures{
+    display: flex;
+}
+
+.pictures img{
+    width: 25%;
+}
+
+/*********Footer *********/
+
+footer{
+    background-color: hsl(167, 44%, 70%);
+    padding: 3rem;
+}
+
+.footer-title{
+    font-size: 2rem;
+    text-align: center;
+    color: hsl(167, 40%, 24%);
+    font-weight: bolder;
+}
+
+.footer-nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.footer-nav li a{
+    margin: 1.5rem;
+    text-decoration: none;
+    color: hsl(168, 34%, 41%);
+    font-size: 1.2rem;
+}
+
+.footer-nav li a:hover{
+    color: hsl(0, 0%, 100%);
+}
+
+.social-media{
+    margin-top: 4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.social-media img{
+    margin:0 0.7rem;
+}
+
+.social-media img:hover{
+    transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 1023px){
+    .hero-details img{
+        margin-top: 2.5rem;
+    }
+    
+    .box{
+        padding: 4rem;
+    }
+
+    .col img{
+        width: 100%;
+        display: block;
+    }
+
+    .card img{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .box-content{
+        margin-top: -14rem;
+    }
+    
+    .box-content p{
+        margin-bottom: 3rem;
+    }
+
+    .box-content p,
+    .box-content-1 p{
+        width: 90%;
+    }
+
+    .Testimoinals{
+        padding:  5rem 3rem;
+    }
+
+    .testimony p{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        margin-left: -2rem;
+        background-image: url(images/mobile/image-header.jpg);
+        background-size: cover;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .hamburger-btn{
+        display: block;
+        cursor: pointer;
+        height: 25px;
+    }
+   
+    .hero-details .title{
+        font-size: 2.7rem;
+        margin-right: -2rem;
+    }
+
+    .hero-details img{
+        height: 8rem;
+        margin-left: 1.3rem;
+    }
+
+    .row{
+        grid-template-columns: 1fr;
+    }
+
+    .col-2{
+        order: -2;
+    }
+
+    .box{
+        padding: 2.2rem;
+        text-align: center;
+    }
+
+    .box h2{
+        font-size: 2.2rem;
+        width: 100%;
+    }
+
+    .card img{
+        object-fit: cover;
+        height: 75vh;
+    }
+
+    .header-testimonies h2{
+        margin-top: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .testimonies-gallery{
+        flex-direction: column;
+    }
+
+    .pictures{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pictures img{
+        width:100%;
+    }
+} 
